@@ -1,10 +1,11 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Layout from '../components/layouts/Layout';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <h1>Inicio</h1>
+    <div>
+      <Layout>
+        <h1>Inicio</h1>
+      </Layout>      
     </div>
   )
-}
+};
