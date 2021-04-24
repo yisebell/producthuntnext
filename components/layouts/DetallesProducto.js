@@ -2,6 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import formatDistanceToNow from 'date-fns/formatDistanceToNow';
 import { es } from 'date-fns/locale';
+import Link from 'next/link';
 
 const Producto = styled.li`
     padding: 4rem;
@@ -15,7 +16,7 @@ const DescripcionProducto = styled.div`
     flex: 0 1 600px;
     display: grid;
     grid-template-columns: 1fr 3fr;
-    column-gap: 2rem;
+    column-gap: 4rem;
 `;
 
 const Titulo = styled.a`
@@ -66,7 +67,7 @@ const Comentarios = styled.div`
 const Imagen = styled.img`
     width: 200px;
     height: 200px;
-    border-radius: 100px;
+    border-radius: 50%;
     object-fit: cover;
 `;
 
@@ -101,7 +102,9 @@ const DetallesProducto = ({producto}) => {
                 </div>
 
                 <div>
-                    <Titulo>{nombre}</Titulo>
+                    <Link href="/productos/[id]" as={`/productos/${id}`}>
+                        <Titulo>{nombre}</Titulo>
+                    </Link>
                     <TextoDescripcion>{descripcion}</TextoDescripcion>
 
                     <Comentarios>

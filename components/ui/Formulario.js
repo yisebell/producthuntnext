@@ -2,7 +2,6 @@ import styled from '@emotion/styled';
 
 export const Formulario = styled.form`
     max-width: 600px;
-    width: 95%;
     margin: 5rem auto 0 auto;   
 
     fieldset {
@@ -36,7 +35,7 @@ export const Campo = styled.div`
 
 export const InputSubmit = styled.input`
     background-color: var(--naranja);
-    width: 95%;
+    width: 100%;
     padding: 1.5rem;
     text-align: center;
     color: #fff;
