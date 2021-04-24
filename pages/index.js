@@ -22,7 +22,7 @@ export default function Home() {
             </ul>
           </div>
         </div>
-      </Layout>      
+      </Layout>
     </div>
   )
 };

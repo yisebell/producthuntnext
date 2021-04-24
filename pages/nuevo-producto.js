@@ -100,8 +100,6 @@ export default function NuevoProducto() {
       });
   };
 
-  if(!usuario) return ;
-
   return (
     <div>
       <Layout>
